@@ -1,0 +1,27 @@
+version: '3.9'
+
+services:
+  database:
+    image: postgres
+    container_name: databaseNetwork
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=pgUser
+      - POSTGRES_PASSWORD=pgPassword
+      - POSTGRES_DB=network
+    volumes:
+      - pgdata:/data/postgres
+
+  app:
+    build: .
+    container_name: network
+    ports:
+      - 3334:3334
+    volumes:
+      - .:/app
+
+volumes:
+  pgdata:
+    driver: local
