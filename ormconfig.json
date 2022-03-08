@@ -8,6 +8,6 @@
   "migrations": ["./src/migrations/*.ts"],
   "entities": ["./src/entities/*.ts"],
   "cli": {
-    "migrationsDir": "./migrations"
+    "migrationsDir": "./src/migrations/"
   }
 }

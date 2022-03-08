@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
-    "typeorm": "ts-node-dev -r ./node_modules/typeorm/cli.js"
+    "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli.js"
   },
   "license": "MIT",
   "dependencies": {
@@ -12,6 +12,7 @@
     "express": "^4.17.3",
     "pg": "^8.7.3",
     "reflect-metadata": "^0.1.13",
+    "tsyringe": "^4.6.0",
     "typeorm": "^0.2.45",
     "uuid": "^8.3.2"
   },

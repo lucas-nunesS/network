@@ -7,8 +7,8 @@ interface ICreateUserDTO {
 }
 
 interface IUserRepository {
-  create({ name, email, password }: ICreateUserDTO): User;
-  findByEmail(email: string): User;
+  create({ name, email, password }: ICreateUserDTO): Promise<void>;
+  findByEmail(email: string): Promise<User>;
 }
 
 export { IUserRepository, ICreateUserDTO };

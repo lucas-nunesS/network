@@ -1,3 +1,4 @@
+import 'reflect-metadata';
 import express from 'express';
 import { usersRoutes } from './routes/users.routes';
 import { publicationsRoutes } from './routes/publications.routes';
