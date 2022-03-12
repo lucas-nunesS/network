@@ -1,4 +1,4 @@
-import { Publication } from 'entities/Publication';
+import { Publication } from '../entities/Publication';
 
 interface ICreatePublicationDTO {
   text: string;

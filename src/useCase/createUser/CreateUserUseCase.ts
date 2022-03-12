@@ -1,6 +1,6 @@
 import { hash } from 'bcrypt';
 
-import { IUserRepository } from 'Repositories/IUsersRepository';
+import { IUserRepository } from '../../repositories/IUsersRepository';
 import { inject, injectable } from 'tsyringe';
 
 interface IRequest {

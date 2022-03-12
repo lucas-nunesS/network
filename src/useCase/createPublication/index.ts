@@ -1,4 +1,4 @@
-import { PublicationsRepository } from '../../Repositories/implementations/PublicationsRepository';
+import { PublicationsRepository } from '../../repositories/implementations/PublicationsRepository';
 import { CreatePublicationController } from './CreatePublicationController';
 import { CreatePublicationUseCase } from './CreatePublicationUseCase';
 

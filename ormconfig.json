@@ -1,13 +1,13 @@
 {
   "type": "postgres",
+  "port": 5432,
   "host": "localhost",
-  "port": 3334,
   "username": "pgUser",
   "password": "pgPassword",
   "database": "network",
-  "migrations": ["./src/migrations/*.ts"],
   "entities": ["./src/entities/*.ts"],
+  "migrations": ["./src/typeorm/migrations/*.ts"],
   "cli": {
-    "migrationsDir": "./src/migrations/"
+    "migrationsDir": "./src/typeorm/migrations/"
   }
 }

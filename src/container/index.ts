@@ -1,5 +1,5 @@
-import { UsersRepository } from 'Repositories/implementations/UsersRepository';
-import { IUserRepository } from 'Repositories/IUsersRepository';
+import { UsersRepository } from '../repositories/implementations/UsersRepository';
+import { IUserRepository } from '../repositories/IUsersRepository';
 import { container } from 'tsyringe';
 
 container.registerSingleton<IUserRepository>(

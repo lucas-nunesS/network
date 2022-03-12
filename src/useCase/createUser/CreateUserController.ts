@@ -11,6 +11,8 @@ class CreateUserController {
 
       await createUserUseCase.execute({ name, email, password });
 
+      console.log(response.send());
+
       return response.status(201).send();
     } catch (err) {
       return response.status(400).json({ error: err.message });

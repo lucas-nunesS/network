@@ -1,4 +1,4 @@
-import { PublicationsRepository } from 'Repositories/implementations/PublicationsRepository';
+import { PublicationsRepository } from '../../repositories/implementations/PublicationsRepository';
 
 interface IRequest {
   text: string;
